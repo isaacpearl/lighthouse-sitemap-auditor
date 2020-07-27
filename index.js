@@ -31,7 +31,7 @@ const getBatchResults =(xmlPath) => {
   const pages = getPages(xmlPath);
   const pagesArgString = pages.join();
   console.log(pagesArgString);
-  const lb = spawn('lighthouse-batch', ['-h -s', pagesArgString]);
+  const lb = spawn('lighthouse-batch', ['-h','-s', pagesArgString]);
   lb.stdout.on('data', (data) => {
     console.log(`stdout: ${data}`);
   });

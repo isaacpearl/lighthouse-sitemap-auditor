@@ -1,5 +1,5 @@
 {
-  "name": "lighthouse-sitemap-auditor",
+  "name": "@isaacpearl/lighthouse-sitemap-auditor",
   "version": "1.0.0",
   "description": "A tool for running lighthouse audits across all pages of an .xml sitemap in bulk",
   "main": "index.js",
@@ -25,5 +25,6 @@
   "dependencies": {
     "lighthouse-batch": "^6.0.0",
     "xml2js": "^0.4.23"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
